@@ -3,7 +3,7 @@
   Plugin Name: JDs Portfolio
   Plugin URI: https://wordpress.org/plugins/jds-portfolio/
   Description: JDs Portfolio Plugin enables you to Add a projects detailed and produce portfolio page to display information of past  Projects, Use [JDs_portfolio] shortcode for display portfolio.
-  Version: 1.3
+  Version: 1.4
   Author: JayDeep Nimavat
   Author URI:
   License: GPLv2 or later
@@ -78,6 +78,8 @@ function register_JDs_portfolio() {
     );
 
     register_post_type( 'portfolio', $args );
+
+    flush_rewrite_rules();
 }
 
 // register portfolio categories
@@ -134,10 +136,10 @@ function JDs_custom_setting()
 /********* Create Shortcode *************/
 add_shortcode('JDs_portfolio', 'JDs_portfolio_function');
 
-function JDs_portfolio_function($atts = array()) {
+function JDs_portfolio_function($content, $atts = array()) {
     ob_start();
     JDs_portfolio_view($atts);
-    $content = ob_get_clean();
+    $content .= ob_get_clean();
     return $content;
 }
 
