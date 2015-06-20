@@ -4,9 +4,9 @@ Plugin Name: JDs Portfolio
 Tags: portfolio, JDs portfolio, portfolio, wordpress, wordpress portfolio, wordpress plugin, portfolio, plugin, portfolio, plugin, portfolio, business, view business, portfolio, portfolio plugin, wordpress portfolio plugin, wordpress plugin, plugin, jds portfolio wordpress plugin, JDs, filtrable portfolio, multi color portfolio, image, custom, post type, post, gallary, gallary portfolio, image size, color, hover, slide, fade, animation, screen shots, categories, portfolio categories, custom filds, column, responsive, responsive portfolio
 Author: JayDeep Nimavat
 Requires at least: 3.5.0
-Tested up to: 4.1
-Stable Tag: 1.3
-Version: 1.3
+Tested up to: 4.2.2
+Stable Tag: 1.4
+Version: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
